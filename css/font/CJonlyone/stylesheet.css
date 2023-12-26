@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'CJ ONLYONE NEW body';
+    src: url('CJONLYONENEWbodyRegular.eot');
+    src: url('CJONLYONENEWbodyRegular.eot?#iefix') format('embedded-opentype'),
+        url('CJONLYONENEWbodyRegular.woff2') format('woff2'),
+        url('CJONLYONENEWbodyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CJ ONLYONE NEW title';
+    src: url('CJONLYONENEWtitleBold.eot');
+    src: url('CJONLYONENEWtitleBold.eot?#iefix') format('embedded-opentype'),
+        url('CJONLYONENEWtitleBold.woff2') format('woff2'),
+        url('CJONLYONENEWtitleBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CJ ONLYONE NEW title';
+    src: url('CJONLYONENEWtitleMedium.eot');
+    src: url('CJONLYONENEWtitleMedium.eot?#iefix') format('embedded-opentype'),
+        url('CJONLYONENEWtitleMedium.woff2') format('woff2'),
+        url('CJONLYONENEWtitleMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
