@@ -1,0 +1,927 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CJ ONLYONE NEW body';
+    src: url('font/CJonlyone/CJONLYONENEWbodyRegular.eot');
+    src: url('font/CJonlyone/CJONLYONENEWbodyRegular.eot?#iefix') format('embedded-opentype'),
+        url('font/CJonlyone/CJONLYONENEWbodyRegular.woff2') format('woff2'),
+        url('font/CJonlyone/CJONLYONENEWbodyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CJ ONLYONE NEW title';
+    src: url('font/CJonlyone/CJONLYONENEWtitleBold.eot');
+    src: url('font/CJonlyone/CJONLYONENEWtitleBold.eot?#iefix') format('embedded-opentype'),
+        url('font/CJonlyone/CJONLYONENEWtitleBold.woff2') format('woff2'),
+        url('font/CJonlyone/CJONLYONENEWtitleBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CJ ONLYONE NEW title';
+    src: url('font/CJonlyone/CJONLYONENEWtitleMedium.eot');
+    src: url('font/CJonlyone/CJONLYONENEWtitleMedium.eot?#iefix') format('embedded-opentype'),
+        url('font/CJonlyone/CJONLYONENEWtitleMedium.woff2') format('woff2'),
+        url('font/CJonlyone/CJONLYONENEWtitleMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CJ ONLYONE NEW body';
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: #333;
+}
+
+.header {
+    height: 75px;
+    background-color: #33333371;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+}
+.header .inner {
+    width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 75px;
+}
+.header .inner h1 {
+    width: 94px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.header .inner h1 img {
+    width: 100%;
+}
+
+.header .inner .util {
+    font-size: 11px;
+    color: #fff;
+    display: flex;
+    position: relative;
+}
+.header .inner .util::after {
+    content: '';
+    background: url(/img/CJ_menu_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 15px;
+    position: absolute;
+    right: -40px;
+    bottom: 33px;
+}
+
+.header .inner nav {
+    height: 75px;
+    text-align: center;
+}
+.header .inner nav .gnb .depth01 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px;
+    
+}
+.header .inner nav .gnb .depth01 > a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.header .inner nav .gnb .menu01:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+.header .inner nav .gnb .menu02:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+.header .inner nav .gnb .menu03:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+.header .inner nav .gnb .menu04:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+.header .inner nav .gnb .menu05:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.header .inner nav .gnb .depth02 {
+    line-height: 1;
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.header .inner nav .gnb .depth02 > li {
+    color: #008f69;
+    font-size: 20px;
+}
+.header .inner nav .gnb .depth03 > li {
+    font-size: 16px;
+    color: #333;
+}
+.header .inner nav .gnb .depth01 .depth02 li a {
+    padding-bottom: 16px;
+    display: block;
+}
+.header .inner nav .gnb .depth01 .depth02 .depth03 li a {
+    padding-bottom: 12px;
+}
+
+
+.main_visual {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+}
+
+.main_visual figure {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 20px;
+    color: #86cab6;
+    font-weight: normal;
+}
+
+.title p {
+    font-size: 60px;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.cont01 {
+    width: 1280px;
+    margin: 150px auto;
+}
+
+.cont01 .list {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .list figure {
+    width: 840px;
+    height: 100%;
+}
+
+.cont01 .list figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.cont01 .list .text {
+    width: 430px;
+    background-color: #f6f8f8;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.cont01 .list .text a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont01 .list .text a span {
+    font-size: 50px;
+    color: #005b45;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.cont01 .list .text a div h3 {
+    font-size: 34px;
+    color: #005b45;
+    margin-bottom: 25px;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+
+.cont02 {
+    background-color: #f6f8f8;
+    padding: 150px 0;
+}
+
+.cont02 .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.cont02 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont02 .inner .list .item_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont02 .inner .list>div {
+    width: 410px;
+    height: 624px;
+    position: relative;
+}
+
+.cont02 .inner .list .item_wrap .item {
+    height: 300px;
+    position: relative;
+}
+.cont02 .inner .list h3 {
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.cont02 .inner .list>div figure {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cont02 .inner .list>div figure::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(189deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.49763655462184875) 80%, rgba(0, 0, 0, 1) 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cont02 .inner .list>div figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cont02 .inner .list>div .text {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+}
+
+.cont02 .inner .list>div .text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cont03 {
+    width: 1920px;
+    height: 903px;
+    background-color: #005b45;
+}
+
+.cont03 .inner {
+    width: 1280px;
+    height: 903px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.cont03 .inner .title p {
+    color: white;
+}
+
+.cont03 .inner .info {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.cont03 .inner .info p {
+    font-size: 20px;
+    color: #999;
+}
+
+.cont03 .inner .info span {
+    font-size: 20px;
+}
+
+.cont03 .inner .info .box01 {
+    width: 844px;
+    height: 458px;
+    padding: 60px 70px 25px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cont03 .inner .info .box01 .head {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.cont03 .inner .info .box01 .head p {
+    font-size: 24px;
+    margin-right: 40px;
+    color: #333;
+}
+
+.cont03 .inner .info .box01 .head span {
+    font-size: 24px;
+    color: #005b45;
+    position: relative;
+}
+
+.cont03 .inner .info .box01 .head span::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #333;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cont03 .inner .info .box01 .middle {
+    display: flex;
+    height: 100px;
+    line-height: 80px;
+}
+
+.cont03 .inner .info .box01 .middle h2 {
+    font-size: 70px;
+    margin-right: 30px;
+}
+
+.cont03 .inner .info .box01 .middle p {
+    font-size: 20px;
+    color: #999;
+
+}
+
+.cont03 .inner .info .box01 .middle span {
+    font-size: 20px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.cont03 .inner .info .box01 .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cont03 .inner .info .box01 .bottom .btn {
+    width: 33%;
+    margin-bottom: 35px;
+}
+
+.cont03 .inner .info .box01 .bottom .btn p {
+    margin-bottom: 10px;
+}
+
+.cont03 .inner .info .links {
+    width: 409.60px;
+    height: 458px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    position: relative;
+}
+
+.cont03 .inner .info .links li {
+    width: 100%;
+    height: 136px;
+    background-color: white;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 56px;
+    position: relative;
+
+}
+
+.cont03 .inner .info .links li a {
+    padding-left: 50px;
+}
+
+.cont03 .inner .info .links li:first-child a:before {
+    display: block;
+    content: '';
+    background: url(../img/CJ_재무재표_icon.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+.cont03 .inner .info .links li:nth-child(2) a:before {
+    display: block;
+    content: '';
+    background: url(../img/CJ_공시현황_icon.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+.cont03 .inner .info .links li:nth-child(3) a:before {
+    display: block;
+    content: '';
+    background: url(../img/CJ_IR자료실_icon.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.cont03 .inner .info .links li a::after {
+    content: '';
+    background: url(../img/CJ_오른쪽화살표_icon.png);
+    width: 30px;
+    height: 100%;
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.cont04 {
+    width: 1920px;
+    height: 1040px;
+}
+
+.cont04 .title {
+    width: 1280px;
+    height: 740px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.cont04 .title p {
+    padding-bottom: 20px;
+}
+
+.cont04 .title .line01 p {
+    font-size: 20px;
+    color: #005b45;
+}
+
+.cont04 .title .line01 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cont04 .title .line01 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.cont04 .title .line01 a {
+    padding-left: 20px;
+}
+
+.cont04 .title .line01 .news01 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+}
+
+.cont04 .title .line01 .news02 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+}
+
+.cont04 .title .line01 .news03 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+}
+
+.cont04 .title .line01 .news04 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+}
+
+.cont04 .title .line01 .news05 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+}
+
+.cont05 {
+    width: 1920px;
+    height: 1125px;
+    background-color: #e5e5e5;
+}
+
+.cont05 .CS {
+    width: 1280px;
+    height: 825px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.cont05 .CS h3 {
+    font-size: 23.5px;
+    margin: 40px 0 20px;
+}
+
+.cont05 .CS .cs01 {
+    width: 100%;
+    height: 269px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont05 .CS h4 {
+    color: #008f69;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cont05 .CS a {
+    display: block;
+    width: 140px;
+    height: 50px;
+    border: solid black 1px;
+    line-height: 50px;
+    padding-left: 25px;
+}
+
+.cont05 .CS a::after {
+    content: '';
+    background: url(../img/CJ_outlink_l.png);
+    width: 14px;
+    height: 14px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 47px;
+    left: 135px;
+    background-repeat: no-repeat;
+}
+
+.cont05 .CS .cs01 .csbox01 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs01 .csbox01 h4::before {
+    content: '';
+    background: url(../img/CJ_식자재구매상담.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+.cont05 .CS .cs01 .csbox02 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs01 .csbox02 h4::before {
+
+    content: '';
+    background: url(../img/CJ_단체급식_icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+.cont05 .CS .cs01 .csbox03 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs01 .csbox03 h4::before {
+    content: '';
+    background: url(../img/CJ_협력사상담_icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+
+.cont05 .CS .cs02 {
+    width: 100%;
+    height: 269px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cont05 .CS .cs02 .csbox01 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs02 .csbox01 h4::before {
+    content: '';
+    background: url(../img/CJ_챗봇문의_icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+.cont05 .CS .cs02 .csbox02 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs02 .csbox02 h4::before {
+
+    content: '';
+    background: url(../img/CJ_고객의소리_icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+.cont05 .CS .cs02 .csbox03 {
+    width: 410px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cont05 .CS .cs02 .csbox03 h4::before {
+    content: '';
+    background: url(../img/CJ_FAQ_icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+}
+
+
+.footer {
+    width: 100%;
+    position: relative;
+}
+
+.footer .footer_menu {
+    height: 140px;
+    background-color: #005b45;
+    font-size: 18px;
+    color: white;
+}
+
+.footer .footer_menu .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer .footer_menu .inner ul {
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.footer .footer_menu .inner ul li {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+.footer .footer_menu .inner ul li:first-child a {
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.footer .footer_menu .inner .family {
+    float: right;
+    margin-top: 60px;
+}
+
+.footer .footer_menu .inner .family p {
+    border-bottom: solid 1px;
+}
+
+.footer .footer_nav {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer .footer_nav .inner {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_nav .inner .slogon {
+    font-size: 36px;
+    color: #e5e5e5;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.footer .footer_nav .inner .depth1 {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.footer .footer_nav .inner .depth1>li {
+    margin-left: 65px;
+}
+
+.footer .footer_nav .inner .depth1 li {
+    padding-top: 22px;
+    font-family: 'CJ ONLYONE NEW title';
+    font-weight: bold;
+}
+
+.footer .footer_nav .inner .depth1 li a {
+    font-weight: bold;
+}
+
+.footer .footer_nav .inner .depth1 li .depth2 li {
+    color: #999;
+    font-size: 14px;
+}
+
+
+.footer .footer_info {
+    width: 1280px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer_info figure {
+    width: 130px;
+}
+
+.footer .footer_info figure img {
+    width: 100%;
+}
+.footer .footer_info .info {
+    color: #999;
+    font-size: 14px;
+}
+.footer .footer_info .info ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .footer_info .info ul li {
+    margin-left: 8px;
+}
+
+.footer .footer_info .info ul li:first-child {
+    margin-left: 0;
+}
+
+.footer .footer_info .info address {
+    font-style: normal;
+}
