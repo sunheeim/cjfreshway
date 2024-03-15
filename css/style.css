@@ -55,50 +55,133 @@ body {
 }
 
 .header {
-    width: 1903px;
     height: 75px;
+    background-color: #33333371;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+}
+.header .inner {
+    width: 1800px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    background-color: #33333379;
-    align-items: center;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.438);
+    line-height: 75px;
 }
-
-.header h1 {
-    width: 93.08px;
-    height: 75px;
+.header .inner h1 {
+    width: 94px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
-
-.header h1 img {
+.header .inner h1 img {
     width: 100%;
-    object-fit: cover;
-    margin: 20px 50px;
 }
 
-.header nav ul li {
-    display: inline-block;
-    margin: 0 30px;
-    font-size: 18px;
-}
-
-.header .util ul {
+.header .inner .util {
+    font-size: 11px;
+    color: #fff;
     display: flex;
+    position: relative;
 }
-
-.header .util ul li {
-    font-size: 13px;
-}
-
-.header .util ul li img {
-    width: 20px;
+.header .inner .util::after {
+    content: '';
+    background: url(/img/CJ_menu_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 20px;
-    margin: 0 50px;
+    width: 15px;
+    position: absolute;
+    right: -40px;
+    bottom: 33px;
 }
+
+.header .inner nav {
+    height: 75px;
+    text-align: center;
+}
+.header .inner nav .gnb .depth01 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px;
+    
+}
+.header .inner nav .gnb .depth01 > a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.header .inner nav .gnb .menu01:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+.header .inner nav .gnb .menu02:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+    transition: all 1s;
+}
+.header .inner nav .gnb .menu03:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+.header .inner nav .gnb .menu04:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+.header .inner nav .gnb .menu05:hover .depth02 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.header .inner nav .gnb .depth02 {
+    line-height: 1;
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.header .inner nav .gnb .depth02 > li {
+    color: #008f69;
+    font-size: 20px;
+}
+.header .inner nav .gnb .depth03 > li {
+    font-size: 16px;
+    color: #333;
+}
+.header .inner nav .gnb .depth01 .depth02 li a {
+    padding-bottom: 16px;
+    display: block;
+}
+.header .inner nav .gnb .depth01 .depth02 .depth03 li a {
+    padding-bottom: 12px;
+}
+
 
 .main_visual {
     margin: 0 auto;
@@ -108,6 +191,9 @@ body {
 
 .main_visual figure {
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .main_visual figure img {
